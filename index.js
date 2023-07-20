@@ -47,3 +47,11 @@ const pizzas = [
     ingredientes: ["Muzzarella", "Tomate", "Anana"],
   },
 ];
+
+// a. Imprimir pizzas con ID IMPAR
+
+const pizzaswithoddID = pizzas.filter ((pizza) => pizza.id % 2 !== 0);
+console.log("Las pizzas con ID IMPAR son:");
+pizzaswithoddID.forEach ((pizza) => {
+  console.log(`·${pizza.nombre}, y su id es {$pizza.id}`);
+});
