@@ -48,7 +48,7 @@ const pizzas = [
   },
 ];
 
-// a. Imprimir pizzas con ID IMPAR
+// a. Imprimir pizzas con ID IMPAR.
 
 const pizzaswithoddID = pizzas.filter ((pizza) => pizza.id % 2 !== 0);
 console.log("Las pizzas con ID IMPAR son:");
@@ -56,9 +56,14 @@ pizzaswithoddID.forEach ((pizza) => {
   console.log(`·${pizza.nombre}, y su id es ${pizza.id}`);
 });
 
-//b. Responde a la pregunta, ¿hay alguna pizza que valga menos de $600?
+//b. Responde a la pregunta, ¿hay alguna pizza que valga menos de $600?.
 
 const lessthan600 = pizzas.some ((pizza) => pizza.precio < 600);
 console.log (
 `¿Hay alguna pizza que tenga un valor menor a $600? ${lessthan600 ? "Tenemos" : "No tenemos"}`
 );
+
+//c. Imprimir el nombre de cada pizza con su respectivo precio.
+
+console.log ("Estos son los nombres y los precios de las pizzas que tenemos");
+pizzas.forEach ((pizza) => console.log(`${pizza.nombre}: ${pizza.precio}`));
