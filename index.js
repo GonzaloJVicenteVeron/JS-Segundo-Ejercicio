@@ -67,3 +67,14 @@ console.log (
 
 console.log ("Estos son los nombres y los precios de las pizzas que tenemos");
 pizzas.forEach ((pizza) => console.log(`${pizza.nombre}: ${pizza.precio}`));
+
+
+//d. Imprimir todos los ingredientes de cada pizza
+
+console.log ("¿Qué ingrediente tiene cada pizza?");
+pizzas.forEach ((pizza) => {
+  console.log (`${pizza.nombre}:`);
+  pizza.ingredientes.forEach ((ingrediente) =>
+  console.log (`${ingrediente}`)
+  );
+});
